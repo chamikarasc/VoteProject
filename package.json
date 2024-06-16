@@ -1,0 +1,69 @@
+{
+  "name": "steem-wise-voter-page",
+  "version": "3.1.1",
+  "description": "Vote delegation system for STEEM blockchain: a voting page",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && webpack",
+    "serve": "http-server ./",
+    "build-and-serve": "npm run build & npm run serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/vue-fontawesome": "0.0.22",
+    "@types/lodash": "^4.14.116",
+    "@types/steem-js-alpha": "https://github.com/wise-team/types-for-steem-js/raw/master/bin/types-steem-js-alpha-3.1.2.tgz",
+    "bluebird": "^3.5.2",
+    "bootstrap": "^4.1.2",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "lodash": "^4.17.11",
+    "steem": "^0.7.1",
+    "steem-wise-core": "^3.1.1",
+    "steemconnect": "^2.0.0",
+    "vue": "^2.5.17",
+    "vue-class-component": "^6.0.0",
+    "vue-property-decorator": "^6.1.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "vuex-persistedstate": "^2.5.4"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.24",
+    "css-loader": "^0.28.11",
+    "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.11.1",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "ts-loader": "^4.5.0",
+    "typescript": "^2.9.2",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.19.0",
+    "webpack-cli": "^2.1.5",
+    "webpack-visualizer-plugin": "^0.1.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wise-team/steem-wise-voter-page.git"
+  },
+  "keywords": [
+    "steem",
+    "blockchain",
+    "wise"
+  ],
+  "author": "The Wise Team (https://wise-team.io/)",
+  "contributors": [
+    "Jędrzej Lewandowski <jedrzejblew@gmail.com> (https://jedrzej.lewandowski.doctor/)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wise-team/steem-wise-voter-page/issues"
+  },
+  "homepage": "https://wise.vote/",
+  "engines": {
+    "node": ">=10.15"
+  }
+}
